@@ -1,0 +1,37 @@
+public class Customer {
+    // SOLID
+    // Single-responsibility-->Bir sınıfın yapması gereken yalnızca bir işi olmalıdır.
+    // Open-closed-->Sınıf ya da fonksiyon var olan özellikleri korumalı ve yeni
+    //özellikler kazanabiliyor olmalıdır.
+    // Liskov subsititution-->Değişikliğe gerek duymadan alt sınıfları üst 
+    //sınıfların yerine kullanabilme.
+    // Interface segregation-->Görevleri tek arayüze toplamak yerine 
+    //özelleştirilmiş birden fazla arayüz oluşturulamlı.
+    // Dependency Inversion-->Sınıflar arası bağımlılıklar mümkün mertebe az 
+    //olmalıdır, özellikle üst sınıflar alt sınıflara bağımlı olmamalıdır.
+    
+    public Customer(){
+        System.out.println("müşteri nesnesi başlatıldı.");
+    }
+            
+    int id; 
+    String City;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+   
+    public String getCity() {
+        return City;
+    }
+
+    public void setCity(String City) {
+        this.City = City;
+    } 
+    
+}
