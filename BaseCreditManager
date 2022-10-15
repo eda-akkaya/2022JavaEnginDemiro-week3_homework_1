@@ -1,0 +1,12 @@
+abstract class BaseCreditManager implements ICreditManager {
+
+    @Override
+    public abstract void calculate(); //Tamamlanmamış operasyon
+    //Ortak değil, her yerde değişken olduğu için sadece imza olarak bıraktık.
+
+    @Override
+    public void save() { // Tamamlanmış (içi doldurulmuş) fonksiyon
+        System.out.println("kredi kaydedildi.");
+    }
+
+}
