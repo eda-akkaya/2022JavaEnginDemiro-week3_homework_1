@@ -1,0 +1,4 @@
+//Dal: Data access layer
+public interface ICustomerDal {
+    public void add();
+}
