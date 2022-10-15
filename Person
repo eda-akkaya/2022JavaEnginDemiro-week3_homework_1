@@ -1,0 +1,30 @@
+public class Person extends Customer {
+    String NationalIdentity;
+    String FirstName;
+    String LastName;
+
+    public String getNationalIdentity() {
+        return NationalIdentity;
+    }
+
+    public void setNationalIdentity(String NationalIdentity) {
+        this.NationalIdentity = NationalIdentity;
+    }
+
+    public String getFirstName() {
+        return FirstName;
+    }
+
+    public void setFirstName(String FirstName) {
+        this.FirstName = FirstName;
+    }
+
+    public String getLastName() {
+        return LastName;
+    }
+
+    public void setLastName(String LastName) {
+        this.LastName = LastName;
+    }
+       
+}
