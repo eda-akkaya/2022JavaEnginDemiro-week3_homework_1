@@ -1,0 +1,46 @@
+public class Main {
+    
+    public static void main(String[] args) {
+    CreditManager creditManager=new CreditManager();
+    creditManager.calculate();
+    creditManager.save();
+    
+    Customer customer = new Customer(); //instance creation(örneğini oluşturmak)
+    customer.id=0;
+    customer.City="Istanbul";
+    
+    
+    
+    CustomerManager customerManager = new CustomerManager(new Customer(),new TeacherCreditManager());
+    customerManager.giveCredit();
+    
+    customerManager = new CustomerManager(new MySqlCustomerDal());
+    customerManager.add();
+    
+    
+    Company company = new Company();
+    company.TaxNumber="10000";
+    company.CompanyName="Anadolu Efes";
+    company.id=1976;
+    
+   
+    
+    Person person = new Person();
+    person.NationalIdentity="00000";
+    
+    
+    Customer c1 = new Customer();
+    Customer c2 = new Person();
+    Customer c3 = new Company();
+    
+    
+    
+    
+    
+    customerManager = new CustomerManager(new MySqlCustomerDal());
+    customerManager.add();
+    }
+    
+    // DRY --> don't repeat yourself
+       
+}
