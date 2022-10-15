@@ -35,7 +35,7 @@ public class Main {
     
     
     
-    
+    //part2
     
     customerManager = new CustomerManager(new MySqlCustomerDal());
     customerManager.add();
